@@ -69,6 +69,6 @@ while True:
     n = input("Please enter an n value. ")
     print("The probability of finding that phrase, based off the entered corpus, is: ", calculate_probability(int(n), corpus, find_prob) * 100, "%")
     should_continue = input("Would you like to enter another phrase and n value? ")
-    if should_continue == "yes" or "Yes":
+    if should_continue != "yes" or "Yes":
         exit
 # https://web.stanford.edu/~jurafsky/slp3/3.pdf
