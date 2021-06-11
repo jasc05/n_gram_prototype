@@ -13,7 +13,7 @@ def create_word_list(text, add_markers):
     words_list = text.lower().split(" ")
     if add_markers:
         words_list.insert(0, "<s>")
-        if words_list[-1] == "<s>": # period at end of sentence will create extraneous start marker
+        if words_list[-1] == "<s>": # period at end of input will create extraneous start marker
             words_list.pop(-1)
         if words_list[-1] != "</s>":  # if there was no period at the end of the last sentence, we have to make sure
             # the ending marker is added
